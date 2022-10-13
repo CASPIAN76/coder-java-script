@@ -112,18 +112,18 @@ const register=( )=>{
 // data()
 
 
-
+//////////////////////////////////////   bind   ////////////////////////////////
 const student={
     name:"rahul",
     latsname:"rrr",
   fullname: function(){
-    // return this.latsname + " " + this.name
-    return this.
+    return this.latsname + " " + this.name
+   
   }
     
 }
 
-s
+
 
 const student1={
     name:"ccxcxc",
@@ -132,5 +132,94 @@ const student1={
 
 let fullna=student.fullname.bind(student1)
 console.log(fullna())
+
+
+////////////////////////////////////////////////     call //////////////////////////////
+
+const  teacher={
+ name:"nikhil",
+ lastname:"xxxxx",
+ fullname:function(){
+     return this.name + " "+ this.lastname
+ }
+
+}
+const  data={
+    name:"PALLAVI",
+    lastname:"ZADE",
+
+}
+const d=teacher.fullname.call(data);
+console.log(d)
+
+// console.log(teacher.fullname());
+
+// console.log( teacher.name +" " + teacher.lastname)
+
+
+///////////////////////////////////////////  call back  ////////////////////
+
+
+// const  multiplcation=(a,b)=>{
+// return a*b
+// }
+// console.log(multiplcation(5,5))
+
+
+// function  add(a,b,data){
+//   let sum=a+b,
+//   data(sum)
+// }
+// console.log(add(10, 10, calme))
+
+
+
+// function  p(name, student){
+// console.log(name, )
+// student()
+// }
+
+
+
+// function Nile( ){
+// console.log("nilesh")
+// }
+// p('Nikile', Nile)
+
+
+///
+               ////   calback ////
+// const datta=[
+//     {  name:"nilesh", age:30, payment:3000},
+//     {  name:"pallavi", age:90, payment:90000},
+// ]
+
+// function  st(){
+//     setTimeout(()=>{
+//         let output;
+//         datta.forEach((dat, index)=>{
+//          output+=` <li> ${ dat.name}</li>`
+//         })
+// document.body.innerHTML=output;
+
+//     },1000)
+// }
+
+
+// function addStudent( newdata, data){
+//  setTimeout(()=>{
+//   datta.push(newdata)
+//    data()
+//  },3000)
+// }
+
+  
+//   addStudent({ name:"Nikhilesh", age:30, payment:3000}, st)
+
+
+
+///////////////////////////////////   async and awiat  /////////////////
+
+
 
 
